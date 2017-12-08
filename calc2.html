@@ -1,0 +1,1600 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.1.135/jspdf.min.js"></script>
+
+
+<body><center>
+   <div id="target">
+  <div id="content">
+    <h3>Html to pdf</h3>
+    <a class="upload"></a> 
+    <style>
+    
+    th{
+      color: white;
+    }
+    td{
+      background-color: #909090; 
+    }
+    .button {
+    background-color:#555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.test{
+  background: #909090;
+}
+    table{
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      background-position: center;
+      
+
+table-layout: fixed;
+width: 8em;
+top: 50%
+left:50%;
+margin-right: -50%;
+
+
+    }
+    
+    
+    </style>
+    
+     
+   <table class="table"  >
+    
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"><br><br><center><b>One rep min <input type="text" id="orp" maxlength="4" size="4">
+     
+       <select id="mySelect" onchange="myFunction1()">
+  <option value="Select">Select
+  <option value="Pounds">Pounds
+  <option value="Kg">Kg
+  
+  
+</select>
+<br><br>
+
+       increment&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" step="1" max="100" min="0" data-stepper-debounce="400" class="js-stepper" id="orp1"><br>
+  <!-- increment<input type="text" id="orp1">-->
+
+   <br><br> 
+   <script>
+   function myFunction1(){
+    
+   
+   
+
+ }
+ </script>
+ 
+ <input type="button"  class ="button" onclick="myFunction()" value="Calculate"><br><br>
+ <head>
+  <title>Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+<div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="button" data-toggle="modal" data-target="#myModal">Send Mail</button>
+
+</div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        	<form method="post" action="mail.php">
+<input type="email" placeholder="Enter the Reciever mail id " style="width:300px;" name="email"><br><br>
+<textarea rows="5" cols="20" name="body" style="width:400px" placeholder="Your Body can go here"></textarea><br><br>
+<input type="submit" name="submit" value="send"> 
+</form>
+</div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    
+  </div>
+  
+</div>
+</table>
+</body>
+
+<table class="table" >
+ 
+     <thead bgcolor="#FF0000">
+      <th align="center">PHASE IN</th>
+      <div id="dvContainer">
+<tr bgcolor="#FF0000">
+      <th align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Week</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Day</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Lift</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Sets</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+       <th>Reps</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Weight</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+      </thead></tr>
+    <tbody>
+      <tr bgcolor: "#909090">
+        <td bgcolor: "#909090">1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>8</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn1" readonly="readonly">
+        </td>
+      </tr>
+        <tr>
+        <td>1</td>
+        
+        <td>1</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn2" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>1</td>
+        
+        <td>1</td>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+       <td> <input class="test" style="border:none" type="text" id="fn3" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>1</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>8</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn4" readonly="readonly" >
+         
+        </td>
+      </tr>
+       <tr>
+        <td>1</td>
+        
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff1" readonly="readonly" >
+         
+        </td>
+      </tr>
+        <tr>
+        <td>1</td>
+        
+        <td>2</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff2" readonly="readonly" >
+         
+        </td>
+      </tr>
+        <tr>
+        <td>1</td>
+        
+        <td>2</td>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff3" readonly="readonly" >
+         
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff4" readonly="readonly" >
+         
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff5" readonly="readonly" >
+         
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff6" readonly="readonly" >
+         
+        </td>
+      </tr>
+       <tr>
+        <td>1</td>
+        
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff7" readonly="readonly" >
+         
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff8" readonly="readonly" >
+         
+        </td>
+      </tr>
+       <tr>
+        <td>2</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff9" readonly="readonly" >
+         
+        </td>
+      </tr>
+       <tr>
+        <td>2</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff10" readonly="readonly" >
+         
+        </td>
+      </tr>
+      
+      </div>
+       </tbody>
+           
+    <br><br><br><br>
+         
+
+               
+     <tr>
+     <thead bgcolor="#FF0000" >
+      <th>BASE CYCLE</th>
+    </tr>
+      <div id="dvContainer1">
+        <tr>
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Week</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Day</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Lift</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Sets</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+       <th>Reps</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>weight</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>4</td>
+        <td>9</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn5" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>5</td>
+        <td>7</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn6" readonly="readonly">
+        </td>
+      </tr>
+        <tr>
+        <td>3</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>7</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn7" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+        <td>10</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn8" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>4</td>
+        
+        <td>1</td>
+        <td>1</td>
+        <td>4</td>
+        <td>9</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn9" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>4</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>5</td>
+        <td>7</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn10" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>4</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>7</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn11" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        
+        <td>4</td>
+        <td>1</td>
+        <td>10</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff11" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>5</td>
+        
+        <td>1</td>
+        <td>1</td>
+        <td>4</td>
+        <td>9</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff12" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>5</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>5</td>
+        <td>7</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff13" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>5</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>7</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff14" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>5</td>
+        
+        <td>4</td>
+        <td>1</td>
+        <td>10</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff15" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff16" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff17" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff18" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff19" readonly="readonly">
+         
+        </td>
+      </tr>
+           </tbody>
+           </div>
+    
+       <br><br>
+ 
+ 
+       <thead bgcolor="#FF0000">
+       	<th>INTENSE CYCLE</th>
+
+               <div id="dvContainer">
+     <tr> <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Week</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Day</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Lift</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Sets</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+       <th>Reps</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Weight</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>9</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn12" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn13" readonly="readonly">
+        </td>
+      </tr>
+        <tr>
+        <td>9</td>
+        
+        <td>1</td>
+        <td>3</td>
+        <td>3</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn14" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>9</td>
+        <td>1</td>
+        <td>4</td>
+        <td>1</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn15" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>9</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn16" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>9</td>
+        
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff20" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>9</td>
+        
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff21" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>9</td>
+        
+        <td>2</td>
+        <td>4</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff22" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>9</td>
+        
+        <td>2</td>
+        <td>5</td>
+        <td>2</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff23" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>9</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff24" readonly="readonly">
+         
+        </td>
+        <tr>
+        <td>9</td>
+        
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff25" readonly="readonly">
+         
+        </td>
+        <tr>
+        <td>9</td>
+        
+        <td>3</td>
+        <td>3</td>
+        <td>5</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff26" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>10</td>
+        
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff27" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>10</td>
+        
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff28" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>10</td>
+        
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff29" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>10</td>
+        
+        <td>1</td>
+        <td>4</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff30" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>10</td>
+        
+        <td>1</td>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff31" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff32" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff33" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff34" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>2</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff35" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>2</td>
+        <td>5</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff36" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff37" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff38" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff39" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>10</td>
+        
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff40" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff41" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff42" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff43" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        
+        <td>1</td>
+        <td>4</td>
+        <td>5</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff44" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff45" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff46" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff47" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff48" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>11</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff49" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>11</td>
+        
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff50" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>11</td>
+        
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff51" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>11</td>
+        
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff52" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff53" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff54" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>1</td>
+        <td>3</td>
+        <td>5</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff55" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff56" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff57" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff58" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff59" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff60" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff61" readonly="readonly">
+         
+        </td>
+      </tr>
+        
+           </tbody>
+           </div>
+    
+          
+          
+       <thead bgcolor="#FF0000">
+       <tr>
+               <th>TAPER WEEK </th> 
+             </th>
+               <div id="dvContainer">
+      <thead bgcolor="#FF0000">
+      <tr>
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Week</th>
+        <th>Day</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Lift</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Sets</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+       <th>Reps</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        <th>Weight</th>&nbsp;&nbsp;&nbsp;&nbsp;
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>13</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn17" readonly="readonly">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn18" readonly="readonly">
+        </td>
+      </tr>
+        <tr>
+        <td>13</td>
+        <td>1</td>
+        <td>3</td>
+        <td>2</td>
+        <td>5</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn19" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>13</td>
+        <td>1</td>
+        <td>4</td>
+        <td>3</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn20" readonly="readonly">
+         
+        </td>
+      </tr>
+        <tr>
+        <td>13</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="fn21" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>13</td>
+        <td>2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff62" readonly="readonly">
+         
+        </td>
+      </tr>
+       <tr>
+        <td>13</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>
+        <input class="test" style="border:none" type="text" id="ff63" readonly="readonly">
+         
+        </td>
+      </tr>
+  </div>
+  </div>
+  
+</body>
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+if(x=='Kg')
+{
+ var
+  a=parseInt(document.getElementById("orp").value);
+  d=parseInt(document.getElementById("orp1").value);
+   var x =  a*0.65;
+  var y=a*0.70;
+  var z=a*0.75;
+  var b=a*0.80;
+  var c=a*0.65;
+  var a2=a*0.70;
+  var b2=a*0.75;
+  var c2=a*0.80;
+  var d2=a*0.70;
+  var e2=a*0.75;
+  var f2=a*0.80;
+  var g2=a*0.90;
+  var h2=a*0.80;
+  var i2=a*0.825;
+  var j2=a*0.85;
+  var e=a*0.70;
+  var f=a*0.75;
+  var g=a*0.80;
+  var h=a*0.85;
+  var i=(a*0.70)+d;
+  var j=(a*0.75)+d;
+  var k=(a*0.80)+d;
+  var l=a*0.65;
+  var m=a*0.75;
+  var n=a*0.85;
+  var o=a*0.85;
+  var p=a*0.60;
+  var q=a*0.70;
+  var r=a*0.80;
+  var s=a*0.90;
+  var t=a*0.95;
+  var u=a*0.75;
+  var k2=(a*0.85);
+  var l2=(a*0.70)+(2*d);
+  var m2=(a*0.75)+(2*d);
+  var n2=(a*0.80)+(2*d);
+  var o2=(a*0.85)+(2*d);
+  var p2=a*0.70;
+  var q2=a*0.80;
+  var r2=a*0.90;
+  var s2=a*0.85;
+  var t2=a*0.65;
+  var u2=a*0.70;
+  var v2=a*0.80;
+  var w2=a*0.60;
+  var x2=a*0.70;
+  var y2=a*0.80;
+  var z2=a*0.90;
+  var a3=a*0.90;
+  var b3=a*0.65;
+  var c3=a*0.75;
+  var d3=a*0.85;
+  var e3=a*0.90;
+  var f3=a*0.95;
+   var g3=a*0.65;
+    var h3=a*0.75;
+     var i3=a*0.85;
+     var j3=a*0.90;
+     var k3=a*0.60;
+   var l3=a*0.70;
+   var m3=a*0.80;
+   var n3=a*0.90;
+   var o3=a*0.60;  
+   var p3=a*0.70;
+   var q3=a*0.80;
+   var r3=a*0.95;
+    var s3=a*0.65;
+     var t3=a*0.75;
+      var u3=a*0.85;
+       var v3=a*0.95;
+   var w3=a*0.70;
+    var x3=a*0.80;
+ var y3=a*0.90;
+ var z3=a*0.70;
+ var a4=a*0.80;
+ var b4=a*0.95;
+ var c4=a*0.75;
+ var d4=a*0.90;
+ var e4=a*0.85;
+ var f4=a*0.80;
+
+
+
+  
+  document.getElementById("fn").value=x;
+  document.getElementById("fn1").value=y;
+  document.getElementById("fn2").value=z;
+  document.getElementById("fn3").value=b;
+  document.getElementById("fn4").value=c;
+  document.getElementById("ff1").value=a2;
+  document.getElementById("ff2").value=b2;
+  document.getElementById("ff3").value=c2;
+  document.getElementById("ff4").value=d2;
+  document.getElementById("ff5").value=e2;
+  document.getElementById("ff6").value=f2;
+  document.getElementById("ff7").value=g2;
+  document.getElementById("ff8").value=h2;
+  document.getElementById("ff9").value=i2;
+  document.getElementById("ff10").value=j2;
+  document.getElementById("fn5").value=e;
+  document.getElementById("fn6").value=f;
+  document.getElementById("fn7").value=g;
+  document.getElementById("fn8").value=h;
+  document.getElementById("fn9").value=i;
+  document.getElementById("fn10").value=j;
+  document.getElementById("fn11").value=k;
+  document.getElementById("fn12").value=l;
+  document.getElementById("fn13").value=m;
+  document.getElementById("fn14").value=n;
+  document.getElementById("fn15").value=o;
+  document.getElementById("fn16").value=p;
+  document.getElementById("fn17").value=q;
+  document.getElementById("fn18").value=r;
+  document.getElementById("fn19").value=s;
+  document.getElementById("fn20").value=t;
+  document.getElementById("fn21").value=u;
+   document.getElementById("ff11").value=k2;
+    document.getElementById("ff12").value=l2;
+     document.getElementById("ff13").value=m2;
+  document.getElementById("ff14").value=n2;
+ document.getElementById("ff15").value=o2;
+ document.getElementById("ff16").value="REST";
+ document.getElementById("ff17").value="REST";
+ document.getElementById("ff18").value="MAX"; 
+ document.getElementById("ff19").value="MAX";
+ document.getElementById("ff20").value=p2;
+ document.getElementById("ff21").value=q2;
+ document.getElementById("ff22").value=r2;
+ document.getElementById("ff23").value=s2;
+ document.getElementById("ff24").value=t2;
+  document.getElementById("ff25").value=u2;
+   document.getElementById("ff26").value=v2;
+ document.getElementById("ff27").value=w2;
+ document.getElementById("ff28").value=x2;
+ document.getElementById("ff29").value=y2;
+ document.getElementById("ff30").value=z2;
+ document.getElementById("ff31").value=a3;
+ document.getElementById("ff32").value=b3;
+ document.getElementById("ff33").value=c3;
+ document.getElementById("ff34").value=d3;
+ document.getElementById("ff35").value=e3;
+ document.getElementById("ff36").value=f3; 
+ document.getElementById("ff37").value=g3;
+ document.getElementById("ff38").value=h3; 
+ document.getElementById("ff39").value=i3;
+ document.getElementById("ff40").value=j3;
+ document.getElementById("ff41").value=k3;
+ document.getElementById("ff42").value=l3;
+ document.getElementById("ff43").value=m3;
+ document.getElementById("ff44").value=n3;
+  document.getElementById("ff45").value=o3;
+   document.getElementById("ff46").value=p3;
+  document.getElementById("ff47").value=q3;
+   document.getElementById("ff48").value=r3; 
+    document.getElementById("ff49").value=s3; 
+     document.getElementById("ff50").value=t3; 
+      document.getElementById("ff51").value=u3; 
+   document.getElementById("ff52").value=v3;
+     document.getElementById("ff53").value=w3;
+   document.getElementById("ff54").value=x3;
+     document.getElementById("ff55").value=y3;
+       document.getElementById("ff56").value=z3;
+  document.getElementById("ff57").value=a4;
+    document.getElementById("ff58").value=b4;
+      document.getElementById("ff59").value=c4;
+        document.getElementById("ff60").value=d4;
+          document.getElementById("ff61").value=e4;
+            document.getElementById("ff62").value=f4;
+            document.getElementById("ff63").value="MAX";          
+
+   
+
+    
+}
+else if(x=='Pounds')
+{
+ var
+  a1=parseInt(document.getElementById("orp").value);
+  d1=parseInt(document.getElementById("orp1").value);
+   var x1 =  a1*0.65*2.20462;
+  var y1=a1*0.70*2.20462;
+  var z1=a1*0.75*2.20462;
+  var b1=a1*0.80*2.20462;
+  var c1=a1*0.65*2.20462;
+  var e1=a1*0.70*2.20462;
+  var f1=a1*0.75*2.20462;
+  var g1=a1*0.80*2.20462;
+  var h1=a1*0.85*2.20462;
+  var i1=(a1*0.70*2.20462)+(2*d1*2.20462);
+  var j1=(a1*0.75*2.20462)+(2*d1*2.20462);
+  var k1=(a1*0.80*2.20462)+(2*d1*2.20462);
+  var l1=a1*0.65*2.20462;
+  var m1=a1*0.75*2.20462;
+  var n1=a1*0.85*2.20462;
+  var o1=a1*0.85*2.20462;
+  var p1=a1*0.60*2.20462;
+  var q1=a1*0.70*2.20462;
+  var r1=a1*0.80*2.20462;
+  var s1=a1*0.90*2.20462;
+  var t1=a1*0.95*2.20462;
+  var u1=a1*0.75*2.20462;
+  var a5=a1*0.70*2.20462;
+  var b5=a1*0.75*2.20462;
+  var c5=a1*0.80*2.20462;
+  var d5=a1*0.70*2.20462;
+  var e5=a1*0.75*2.20462;
+  var f5=a1*0.80*2.20462;
+  var g5=a1*0.90*2.20462;
+  var h5=a1*0.80*2.20462;
+  var i5=a1*0.825*2.20462;
+  var j5=a1*0.85*2.20462;
+  var k5=a1*0.90*2.20462;
+  var l5=(((a1*0.70)+(2*d1))*2.20462);
+  var m5=(((a1*0.75)+(2*d1))*2.20462);
+  var n5=(((a1*0.80)+(2*d1))*2.20462);
+  var o5=(((a1*0.85)+(2*d1))*2.20462);
+  var p5=a1*0.70*2.20462;
+  var q5=a1*0.80*2.20462;
+  var r5=a1*0.90*2.20462;
+  var s5=a1*0.85*2.20462;
+  var t5=a1*0.65*2.20462;
+  var u5=a1*0.70*2.20462;
+  var v5=a1*0.80*2.20462;
+  var w5=a1*0.60*2.20462;
+  var x5=a1*0.70*2.20462;
+  var y5=a1*0.80*2.20462;
+  var z5=a1*0.90*2.20462;
+  var a6=a1*0.90*2.20462;
+  var b6=a1*0.65*2.20462;
+  var c6=a1*0.75*2.20462;
+  var d6=a1*0.85*2.20462;
+  var e6=a1*0.90*2.20462;
+  var f6=a1*0.95*2.20462;
+  var g6=a1*0.65*2.20462;
+  var h6=a1*0.75*2.20462;
+  var i6=a1*0.85*2.20462;
+  var j6=a1*0.90*2.20462;
+  var k6=a1*0.60*2.20462;
+  var l6=a1*0.70*2.20462;
+  var m6=a1*0.80*2.20462;
+  var n6=a1*0.90*2.20462;
+  var o6=a1*0.60*2.20462;
+  var p6=a1*0.70*2.20462;
+  var q6=a1*0.80*2.20462;
+  var r6=a1*0.95*2.20462;
+  var s6=a1*0.65*2.20462;
+  var t6=a1*0.75*2.20462;
+  var u6=a1*0.85*2.20462;
+  var v6=a1*0.95*2.20462;
+  var w6=a1*0.70*2.20462;
+  var x6=a1*0.80*2.20462;
+  var y6=a1*0.90*2.20462;
+  var z6=a1*0.70*2.20462;
+  var a7=a1*0.80*2.20462;
+   var b7=a1*0.95*2.20462;
+    var c7=a1*0.75*2.20462;
+     var d7=a1*0.90*2.20462;
+      var e7=a1*0.80*2.20462;
+      var f7=a1*0.85*2.20462;
+
+  
+  document.getElementById("fn").value=x1;
+  document.getElementById("fn1").value=y1;
+  document.getElementById("fn2").value=z1;
+  document.getElementById("fn3").value=b1;
+  document.getElementById("fn4").value=c1;
+  document.getElementById("fn5").value=e1;
+  document.getElementById("fn6").value=f1;
+  document.getElementById("fn7").value=g1;
+  document.getElementById("fn8").value=h1;
+  document.getElementById("fn9").value=i1;
+  document.getElementById("fn10").value=j1;
+  document.getElementById("fn11").value=k1;
+  document.getElementById("fn12").value=l1;
+  document.getElementById("fn13").value=m1;
+  document.getElementById("fn14").value=n1;
+  document.getElementById("fn15").value=o1;
+  document.getElementById("fn16").value=p1;
+  document.getElementById("fn17").value=q1;
+  document.getElementById("fn18").value=r1;
+  document.getElementById("fn19").value=s1;
+  document.getElementById("fn20").value=t1;
+  document.getElementById("fn21").value=u1;
+  document.getElementById("ff1").value=a5;
+  document.getElementById("ff2").value=b5;
+  document.getElementById("ff3").value=c5;
+  document.getElementById("ff4").value=d5;
+  document.getElementById("ff5").value=e5;
+  document.getElementById("ff6").value=f5;
+  document.getElementById("ff7").value=g5;
+  document.getElementById("ff8").value=h5;
+  document.getElementById("ff9").value=i5;
+  document.getElementById("ff10").value=j5;
+  document.getElementById("ff11").value=k5;
+  document.getElementById("ff12").value=l5;
+  document.getElementById("ff13").value=m5;
+  document.getElementById("ff14").value=n5;
+  document.getElementById("ff15").value=o5;
+  document.getElementById("ff16").value="REST";
+ document.getElementById("ff17").value="REST";
+ document.getElementById("ff18").value="MAX"; 
+ document.getElementById("ff19").value="MAX";
+  document.getElementById("ff20").value=p5;
+   document.getElementById("ff21").value=q5;
+    document.getElementById("ff22").value=r5;
+     document.getElementById("ff23").value=s5;
+   document.getElementById("ff24").value=t5;
+    document.getElementById("ff25").value=u5;
+     document.getElementById("ff26").value=v5;
+      document.getElementById("ff27").value=w5;
+ document.getElementById("ff28").value=x5;
+  document.getElementById("ff29").value=y5;
+   document.getElementById("ff30").value=z5;
+document.getElementById("ff31").value=a6;
+document.getElementById("ff32").value=b6; 
+document.getElementById("ff33").value=c6; 
+document.getElementById("ff34").value=d6; 
+document.getElementById("ff35").value=e6; 
+document.getElementById("ff36").value=f6; 
+document.getElementById("ff37").value=g6; 
+document.getElementById("ff38").value=h6;    
+document.getElementById("ff39").value=i6; 
+document.getElementById("ff40").value=j6; 
+document.getElementById("ff41").value=k6; 
+document.getElementById("ff42").value=l6; 
+document.getElementById("ff43").value=m6; 
+document.getElementById("ff44").value=n6; 
+document.getElementById("ff45").value=o6; 
+document.getElementById("ff46").value=p6; 
+document.getElementById("ff47").value=q6; 
+document.getElementById("ff48").value=r6; 
+document.getElementById("ff49").value=s6; 
+document.getElementById("ff50").value=t6; 
+document.getElementById("ff51").value=u6; 
+document.getElementById("ff52").value=v6; 
+document.getElementById("ff53").value=w6; 
+document.getElementById("ff54").value=x6; 
+document.getElementById("ff55").value=y6; 
+document.getElementById("ff56").value=z6;
+document.getElementById("ff57").value=a7;
+document.getElementById("ff58").value=b7; 
+document.getElementById("ff59").value=c7;
+document.getElementById("ff60").value=d7;
+document.getElementById("ff61").value=e7;
+            document.getElementById("ff62").value=f7;          
+
+            document.getElementById("ff63").value="MAX";          
+
+
+    
+}
+}
+var modal = document.getElementById('myModal');
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+    modal.style.display = "block"
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+</script>
